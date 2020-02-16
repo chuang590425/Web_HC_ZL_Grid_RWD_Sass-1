@@ -139,16 +139,17 @@ nav img:hover {
   color: #fff;
 }
 
-#content-1, #content-3 {
-      grid-template-areas: 'pic text-area';
+#content-1,
+#content-3 {
+      grid-template-areas: "pic text-area";
 }
 
 #content-2 {
-      grid-template-areas: 'text-area pic';
+      grid-template-areas: "text-area pic";
 }
 
 #icon {
-  background-color: #F8F9FA;
+  background-color: #f8f9fa;
 }
 
 #icon * {
@@ -199,7 +200,7 @@ nav img:hover {
 }
 
 #icon div div:hover span {
-  color: #F83D40;
+  color: #f83d40;
 }
 
 footer {
@@ -229,7 +230,7 @@ footer p {
 }
 
 #menu a.current {
-  background-color: #F83D40;
+  background-color: #f83d40;
   display: inline-block;
   width: 100%;
   padding: 10px 20px;
@@ -286,6 +287,28 @@ footer p {
   }
   #menu {
     display: block;
+  }
+  #content-1,
+  #content-2,
+  #content-3 {
+        grid-template-areas: "text-area" "pic";
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  #content-1 .pic,
+  #content-2 .pic,
+  #content-3 .pic {
+    text-align: center;
+  }
+  #content-1 .text-area,
+  #content-2 .text-area,
+  #content-3 .text-area {
+    padding: 0 100px;
+  }
+  #icon div {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    padding: 50px;
   }
 }
 /*# sourceMappingURL=style.css.map */
