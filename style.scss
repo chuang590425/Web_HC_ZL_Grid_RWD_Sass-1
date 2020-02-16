@@ -1,3 +1,6 @@
+$text-color-black: #333;
+$bg-color: #F8F9FA;
+
 * {
     margin: 0;
     padding: 0;
@@ -122,4 +125,19 @@ nav {
 }
 #content-2 {
     grid-template-areas: 'text-area pic';
+}
+// 圖示
+#icon {
+    background-color: $bg-color;
+
+    * {
+        color: $text-color-black;
+    }
+
+    div {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
 }
